@@ -129,5 +129,29 @@
 
 - All Done!
 
+## use Standard-version
+- [conventional-changelog/standard-version: Automate versioning and CHANGELOG generation, with semver.org and conventionalcommits.org](https://github.com/conventional-changelog/standard-version)
+- auto tag + auto changelog + auto bump version
+- install it via `npm i --save-dev standard-version` and put below script in package.json
+  ```
+  {
+    "scripts": {
+      "release": "standard-version"
+    }
+  ```
+- first release `npm run release -- --first-release`
+- other release cli
+  ```
+  npm run release
+  
+  npm run release -- --prerelease
+
+  npm run release -- --prerelease alpha
+
+  # npm run script
+  npm run release -- --release-as minor
+  # Or
+  npm run release -- --release-as 1.1.0
+  ```
 
 

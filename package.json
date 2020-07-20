@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "npx git-cz",
-    "lint": "eslint --fix src/*.js"
+    "lint": "eslint --fix src/*.js",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
   "homepage": "https://github.com/re4388/commitizen_test#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^3.2.0",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "standard-version": "^8.0.2"
   },
   "config": {
     "commitizen": {
