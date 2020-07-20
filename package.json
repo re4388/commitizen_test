@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "sh scripts/git-hook-prepush.sh"
+      "pre-push": "sh scripts/git-hook-prepush.sh"
     }
   },
   "keywords": [],
