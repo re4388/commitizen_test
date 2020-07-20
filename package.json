@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "lint": "eslint --fix src/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/re4388/commitizen_test.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "sh scripts/git-hook-prepush.sh"
+    }
   },
   "keywords": [],
   "author": "",
@@ -17,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/re4388/commitizen_test/issues"
   },
-  "homepage": "https://github.com/re4388/commitizen_test#readme"
+  "homepage": "https://github.com/re4388/commitizen_test#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "typescript": "^3.9.7"
+  }
 }
